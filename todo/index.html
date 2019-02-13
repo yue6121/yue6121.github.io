@@ -41,7 +41,7 @@
 			<p v-else>已经完成 <span>{{doneLength}}</span></p>
 			<ul>
 				<li v-for="todo,index in todoList" v-if="todo.flag">
-					<input type="checkbox" @click="todo.flag = !todo.flag">
+					<input type="checkbox" @click="todo.flag = !todo.flag" checked>
 					<p @click="showEdit(todo)">
 						{{todo.text}}
 						<input 
